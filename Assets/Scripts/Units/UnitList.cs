@@ -49,6 +49,7 @@ public class UnitList : MonoBehaviour {
 	}
 
 	public Unit GetFirst() => Units.Count > 0 ? Units[0] : null;
+
 	public bool Empty() => Units.Count == 0;
 
 	public void AddUnit(Unit unit) => Units.Add( unit );

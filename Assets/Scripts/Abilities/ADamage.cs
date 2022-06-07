@@ -10,7 +10,10 @@ public class ADamage : Ability {
 	public override IEnumerator Perform(List<Unit> units) {
 		// Gotta have some effects or something here dude
 		foreach (Unit unit in units)
+		{
 			unit.Health -= Damage;
+			if (Damage > 0) unit.DamageAnim();
+		}
 		yield return new WaitForSeconds(PauseTime);
 	}
 }

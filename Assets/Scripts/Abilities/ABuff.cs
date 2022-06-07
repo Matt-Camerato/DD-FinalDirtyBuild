@@ -13,6 +13,8 @@ public class ABuff : Ability {
 		foreach (Unit unit in units) {
 			unit.Health += HealthInc;
 			unit.Damage += DamageInc;
+
+			if (HealthInc > 0) unit.HealAnim();
 		}
 		yield return new WaitForSeconds(PauseTime);
 	}

@@ -74,8 +74,13 @@ public class GameMaster : MonoBehaviour {
 		Unit left = Left.GetFirst() , right = Right.GetFirst();
 		yield return Activate(Left.GetFirst(), AbillityTriggerEvents.OnAttack);
 		yield return Activate(Right.GetFirst(), AbillityTriggerEvents.OnAttack);
+
 		left.Health -= right.Damage;
+		if (right.Damage > 0) left.DamageAnim();
+
 		right.Health -= left.Damage;
+		if (left.Damage > 0) right.DamageAnim(); 
+
 		OnAttack?.Invoke();
 		yield return Activate(Left.GetFirst(), AbillityTriggerEvents.OnDamaged);
 		yield return Activate(Right.GetFirst(), AbillityTriggerEvents.OnDamaged);

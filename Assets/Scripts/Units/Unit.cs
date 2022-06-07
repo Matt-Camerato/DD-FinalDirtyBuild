@@ -31,4 +31,13 @@ public class Unit : MonoBehaviour {
 		Name = data.Name;
 		Description = data.Description;
 	}
+
+	public void Discard(Unit unit)
+	{
+
+	}
+
+	public void DamageAnim() => GetComponent<Animator>().Play("TakeDamage");
+
+	public void HealAnim() => GetComponent<Animator>().Play("GainHealth");
 }

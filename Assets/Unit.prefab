@@ -730,6 +730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8448158545997779608}
   - component: {fileID: 101974927}
+  - component: {fileID: 5421750919483946375}
   m_Layer: 0
   m_Name: Unit
   m_TagString: Untagged
@@ -766,8 +767,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: 
+  Description: 
   Health_Tracker: {fileID: 213603772}
   Attack_Tracker: {fileID: 945995712}
   Name_Tracker: {fileID: 1699743063759853920}
   Sprite: {fileID: 8448158545433758372}
   Abilities: []
+--- !u!95 &5421750919483946375
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8448158545997779611}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fbb90be6951d8374d85578b1018a8574, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
