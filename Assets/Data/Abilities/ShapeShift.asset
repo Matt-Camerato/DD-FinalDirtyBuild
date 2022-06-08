@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a08ce864d93118c43bb22cd1ccd653c7, type: 3}
-  m_Name: 0_Attack 1
+  m_Script: {fileID: 11500000, guid: 789f434049fd0a54094d90121664dc33, type: 3}
+  m_Name: ShapeShift
   m_EditorClassIdentifier: 
-  HealthBuff: 0
-  DamageBuff: 1
-  Name: ATK
-  Description: +1 ATTACK
-  Abilities: []
-  Sprite: {fileID: 1480075987019666916, guid: fcb8772ef0fc3634fab81a9022bce81e, type: 3}
+  TriggerEvent: 4
+  Targets: 7
+  PauseTime: 0.2
+  swapType: 1
+  place: 0
