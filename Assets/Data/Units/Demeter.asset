@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 5
   Damage: 2
   Name: Demeter
-  Description: 
-  Sprite: {fileID: 226702753830753226, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Description: heal ally behind you by 1
+  Sprite: {fileID: 1534869583582892183, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
   - {fileID: 11400000, guid: 8d17152ee463b9f4c972810b1746240a, type: 2}

@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 1
   Damage: 3
   Name: Hermes
-  Description: 
-  Sprite: {fileID: 1269540525142108225, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Description: swap with ally behind
+  Sprite: {fileID: -78201119569636868, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
   - {fileID: 11400000, guid: 7b03e7b87f30e2e41918f68a87e4953f, type: 2}

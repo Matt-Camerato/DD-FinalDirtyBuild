@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 3
   Damage: 4
   Name: Poseidon
-  Description: God of the Sea and Earthquakes
-  Sprite: {fileID: 5777552420452043588, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Description: deal 1 damage to all babies
+  Sprite: {fileID: 3310684820886892384, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
   - {fileID: 11400000, guid: 0b3c215887c0f5e46a2c2381434927a9, type: 2}

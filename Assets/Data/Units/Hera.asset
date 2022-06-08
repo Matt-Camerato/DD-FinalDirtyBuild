@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 5
   Damage: 2
   Name: Hera
-  Description: 
-  Sprite: {fileID: -5906973516983679737, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Description: swap attack with ally with highest attack
+  Sprite: {fileID: 841202934583510804, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
   - {fileID: 11400000, guid: dee75e04c34eb6145ae78df8e3aa202e, type: 2}

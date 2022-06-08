@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 2
   Damage: 5
   Name: Zeus
-  Description: Ruler of Olympus
-  Sprite: {fileID: -2630129836624287915, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Description: Hit adjancent babies with attack 1
+  Sprite: {fileID: -170577451701528700, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
   - {fileID: 11400000, guid: f28759bd424db2249bf3f178c09737b2, type: 2}

@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 3
   Damage: 1
   Name: Aphrodite
-  Description: 
-  Sprite: {fileID: -6251682230944352461, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Description: add 1 defense
+  Sprite: {fileID: -2373516836704092828, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
   - {fileID: 11400000, guid: ddd7903f35bff554382248402659fd68, type: 2}
