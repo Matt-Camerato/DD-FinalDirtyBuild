@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a08ce864d93118c43bb22cd1ccd653c7, type: 3}
-  m_Name: 0_DEF
+  m_Name: Nectar
   m_EditorClassIdentifier: 
   HealthBuff: 1
   DamageBuff: 0
-  Name: DEF
-  Description: +1 DEFENSE
+  Name: Nectar
+  Description: +1 Defense
   Abilities: []
-  Sprite: {fileID: -7390275518684517222, guid: fcb8772ef0fc3634fab81a9022bce81e, type: 3}
+  Sprite: {fileID: 21300000, guid: a4eeddf4f571b5a4e9633271dff76195, type: 3}

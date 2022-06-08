@@ -33,7 +33,7 @@ public class UnitManager : MonoBehaviour
 			Quaternion.identity,
 			UnitParent
 		);
-		obj.transform.localPosition = new Vector3(Random.Range(-5.5f, 6f), Random.Range(-2f, -4.5f), 0); // <-hard-coded boundaries of igloo floor (in terms of canvas)
+		obj.transform.localPosition = new Vector3(Random.Range(-5.5f, 5.5f), Random.Range(1.5f, -1.5f), 0); // <-hard-coded boundaries of igloo floor (in terms of canvas)
 		UnitTempDisplay Display = obj.GetComponent<UnitTempDisplay>();
 		Display.SetData(data);
 	}

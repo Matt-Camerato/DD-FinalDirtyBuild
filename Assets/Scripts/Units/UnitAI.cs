@@ -24,7 +24,7 @@ public class UnitAI : MonoBehaviour
     private IEnumerator Wander()
     {
         //set random destination
-        destination = new Vector3(Random.Range(-5.5f, 6f), Random.Range(-2f, -4.5f), 0); // <-hard-coded boundaries of igloo floor (in terms of canvas
+        destination = new Vector3(Random.Range(-5.5f, 5.5f), Random.Range(1.5f, -1.5f), 0); // <-hard-coded boundaries of igloo floor (in terms of canvas
 
         //wait for random period of time
         float wait = waitTime + Random.Range(-3f, 3f);

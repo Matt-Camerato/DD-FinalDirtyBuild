@@ -51,7 +51,7 @@ public class PreCompManager : MonoBehaviour
             //create unit display and link it to slot
             GameObject unitDisplayObj = Instantiate(unitDisplayPrefab, slot.transform.position, Quaternion.identity, slot.transform);
             unitDisplayObj.transform.localPosition = Vector3.zero;
-            unitDisplayObj.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+            unitDisplayObj.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
             UIDragItem item = unitDisplayObj.GetComponent<UIDragItem>();
             item.Link(slot);
             UnitTempDisplay display = unitDisplayObj.GetComponent<UnitTempDisplay>();

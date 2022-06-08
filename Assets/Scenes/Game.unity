@@ -251,11 +251,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 39841b08bf2d379409e1bf006926df3f, type: 2}
   - {fileID: 11400000, guid: 1dfe00e0fed344e43884d68a7ec48348, type: 2}
   Foods:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 50b529d5b83022546ac9433fe40a17ab, type: 2}
+  - {fileID: 11400000, guid: 5d1715763161dc44f9a64f50c011d602, type: 2}
   Number: 6
 --- !u!114 &35965985
 MonoBehaviour:
