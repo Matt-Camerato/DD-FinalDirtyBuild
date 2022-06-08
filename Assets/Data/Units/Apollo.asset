@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 4
   Damage: 3
   Name: Apollo
-  Description: 
-  Sprite: {fileID: 8020143640844766479, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Description: add 2/2 to ally behind you
+  Sprite: {fileID: -5008164201392280732, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
   - {fileID: 11400000, guid: 9bfa2c7047afbe949bf6624b128bcc2a, type: 2}

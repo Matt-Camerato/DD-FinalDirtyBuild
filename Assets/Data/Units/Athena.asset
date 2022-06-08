@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 3
   Damage: 5
   Name: Athena
-  Description: 
-  Sprite: {fileID: 2788568348960109317, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Description: add 1/3 to ally infront of you
+  Sprite: {fileID: -1440023910887957035, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
   - {fileID: 11400000, guid: 1691770a9cd2d6642849ac0fd9913ba3, type: 2}

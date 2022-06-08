@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 2
   Damage: 4
   Name: Ares
-  Description: 
-  Sprite: {fileID: -5962389079421231736, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Description: add 2 atk to yourself
+  Sprite: {fileID: -2412529945344005699, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
   - {fileID: 11400000, guid: fb66e2f593ef6f94287b5e09b1bd29b6, type: 2}

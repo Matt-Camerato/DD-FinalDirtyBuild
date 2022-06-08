@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 2
   Damage: 2
   Name: Dionysus
-  Description: 
-  Sprite: {fileID: -7921052967969465774, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Description: when faint lower atk of first enemy infront by 2
+  Sprite: {fileID: 6695111140749635970, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
   - {fileID: 11400000, guid: b24de0862a716f349a9b1379203db930, type: 2}

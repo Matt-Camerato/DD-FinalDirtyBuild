@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 3
   Damage: 4
   Name: Artemis
-  Description: 
-  Sprite: {fileID: -1259408508766424310, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Description: enemy in the back for 2 atk
+  Sprite: {fileID: 3044939371287930513, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
   - {fileID: 11400000, guid: d37df8c09cdbeae4d88e1a532b178ee5, type: 2}
