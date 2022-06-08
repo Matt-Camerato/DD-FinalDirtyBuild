@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class RoundManager : MonoBehaviour
@@ -10,9 +10,9 @@ public class RoundManager : MonoBehaviour
     static public int roundsWon = 0;
     static public int roundsLost = 0;
 
-    public Text roundText;
-    public Text winsText;
-    public Text lossesText;
+    public TMP_Text roundText;
+    public TMP_Text winsText;
+    public TMP_Text lossesText;
 
     static public void EndRound()
     {

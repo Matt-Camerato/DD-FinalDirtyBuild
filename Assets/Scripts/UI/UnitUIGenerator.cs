@@ -97,6 +97,9 @@ public class UnitUIGenerator : MonoBehaviour {
 				);
 			}
 		}
+
+		//not doing backup slots anymore
+		/*
 		for (int i = 0; i < BackupSlots.Count; i++) {
 			UIDropSlot slot = BackupSlots[i];
 			if (slot.currentItem) {
@@ -105,5 +108,6 @@ public class UnitUIGenerator : MonoBehaviour {
 				);
 			}
 		}
+		*/
 	}
 }
