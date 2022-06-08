@@ -14,7 +14,6 @@ public class GameMaster : MonoBehaviour {
 	public float EndPauseTime = 2f;
 	public UnityEvent OnAttack;
 	public UnityEvent OnEnd;
-
 	public int MaxUnits = 6;
 
 	void Start() {

@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 2
   Damage: 3
   Name: Hades
-  Description: deal 5 damge to random enemy
+  Description: when faint give 2/2 to the ally behind
   Sprite: {fileID: -4046897028259656157, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
-  - {fileID: 11400000, guid: e211b7354dec14743861b5fd49761ceb, type: 2}
+  - {fileID: 11400000, guid: 72329e410c2ae004281db80c94deea7f, type: 2}

@@ -15,7 +15,7 @@ MonoBehaviour:
   Health: 2
   Damage: 5
   Name: Zeus
-  Description: Hit adjancent babies with attack 1
+  Description: When an ally is damaged gain 2/2
   Sprite: {fileID: -170577451701528700, guid: 4498111ae39224e40af15c5d4a348481, type: 3}
   Abilities:
-  - {fileID: 11400000, guid: f28759bd424db2249bf3f178c09737b2, type: 2}
+  - {fileID: 11400000, guid: 02cdc98f2f53a6d4a8cd18c203658c47, type: 2}
