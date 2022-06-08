@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d452e2e2d9dd349969e5109d0bcaae, type: 3}
   m_Name: Zeus1
   m_EditorClassIdentifier: 
-  TriggerEvent: 2
+  TriggerEvent: 1
   Targets: 0
   PauseTime: 1
   HealthInc: 2

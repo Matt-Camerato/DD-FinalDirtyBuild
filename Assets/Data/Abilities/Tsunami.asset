@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d7c35626d0d8964c96efdf29f2661f1, type: 3}
-  m_Name: Tsunami
+  m_Name: 'Unit(Clone) '
   m_EditorClassIdentifier: 
   TriggerEvent: 5
   Targets: 12
