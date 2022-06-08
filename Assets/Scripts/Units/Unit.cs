@@ -16,7 +16,7 @@ public class Unit : MonoBehaviour {
 	public TMP_Text Name_Tracker;
 	public SpriteRenderer Sprite;
 	public List<Ability> Abilities = new List<Ability>();
-
+	public UnitData myData;
 	void LateUpdate() {
 		Health_Tracker.text = Health.ToString();
 		Attack_Tracker.text = Damage.ToString();
@@ -30,6 +30,10 @@ public class Unit : MonoBehaviour {
 		Abilities = data.Abilities;
 		Name = data.Name;
 		Description = data.Description;
+		myData = data;
+	}
+	public UnitData GetData(){
+		return myData;
 	}
 
 	public void Discard(Unit unit)
