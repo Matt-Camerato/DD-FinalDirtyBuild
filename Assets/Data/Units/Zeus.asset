@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde3d6f36e2133f4c843677627445002, type: 3}
+  m_Name: Zeus
+  m_EditorClassIdentifier: 
+  Health: 2
+  Damage: 5
+  Name: Zeus
+  Description: Ruler of Olympus
+  Sprite: {fileID: -2630129836624287915, guid: 7000f2acaef43264e8b49306dbd9644a, type: 3}
+  Abilities:
+  - {fileID: 11400000, guid: f28759bd424db2249bf3f178c09737b2, type: 2}

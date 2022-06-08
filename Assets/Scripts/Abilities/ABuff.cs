@@ -8,7 +8,7 @@ public class ABuff : Ability {
 	public int HealthInc = 0;
 	public int DamageInc = 0;
 
-	public override IEnumerator Perform(List<Unit> units) {
+	public override IEnumerator Perform(List<Unit> units, int index) {
 		// Gotta have some effects or something here dude
 		foreach (Unit unit in units) {
 			unit.Health += HealthInc;

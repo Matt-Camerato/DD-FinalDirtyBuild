@@ -104,7 +104,7 @@ public class GameMaster : MonoBehaviour {
 				}
 
 				int index = allies.Units.FindIndex((value) => value == unit);
-				yield return ability.Perform(Ability.FindAllTargets(ability.Targets, allies, enemies, index));
+				yield return ability.Perform(Ability.FindAllTargets(ability.Targets, allies, enemies, index),index);
 			}
 		}
 	}
