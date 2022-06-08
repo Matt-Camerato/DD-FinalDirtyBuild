@@ -14,12 +14,10 @@ public class GameMaster : MonoBehaviour {
 	public float EndPauseTime = 2f;
 	public UnityEvent OnAttack;
 	public UnityEvent OnEnd;
-
-	public int MaxUnits = 3;
+	public int MaxUnits = 6;
 
 	void Start() {
-		//REMOVED BECAUSE NO LONGER DOING ROUNDS
-		//RoundManager.roundsPlayed++; //increment rounds played
+		RoundManager.roundsPlayed++; //increment rounds played
 
 		if (UnitListStaticRef.Starters != null) {
 			int cnt = MaxUnits;
@@ -67,15 +65,15 @@ public class GameMaster : MonoBehaviour {
 			else
 				yield return new WaitForSeconds(PauseTime * (Left.Count + Right.Count) / cnt / speedMult);
 			yield return ActivateAll(AbillityTriggerEvents.TurnEnd);
+
 		}
 		yield return new WaitForSeconds(EndPauseTime);
 
-		//REMOVED BECAUSE NO LONGER DOING ROUNDS
-		//if (Right.Empty() && !Left.Empty()) RoundManager.roundsWon++;
-		//else if (!Right.Empty() && Left.Empty()) RoundManager.roundsLost++;
-		//RoundManager.EndRound();
+		if (Right.Empty() && !Left.Empty()) RoundManager.roundsWon++;
+		else if (!Right.Empty() && Left.Empty()) RoundManager.roundsLost++;
 
-		OnEnd?.Invoke();
+		RoundManager.EndRound();
+		//OnEnd?.Invoke();
 	}
 
 	IEnumerator Turn() {

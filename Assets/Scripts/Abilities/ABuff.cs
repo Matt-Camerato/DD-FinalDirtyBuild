@@ -10,12 +10,14 @@ public class ABuff : Ability {
 
 	public override IEnumerator Perform(List<Unit> units, int index) {
 		// Gotta have some effects or something here dude
+		string name = "";
 		foreach (Unit unit in units) {
 			unit.Health += HealthInc;
 			unit.Damage += DamageInc;
-
+			name += unit.name+" ";
 			if (HealthInc > 0) unit.HealAnim();
 		}
+		Debug.Log(name+"has increase by "+ HealthInc+"/"+DamageInc);
 		yield return new WaitForSeconds(PauseTime);
 	}
 }
