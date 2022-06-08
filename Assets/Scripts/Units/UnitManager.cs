@@ -13,14 +13,14 @@ public class UnitManager : MonoBehaviour
 
 	private void Awake()
 	{
-		for (int i = 0; i < 10; i++) Generate(); //on startup, give player 10 random units;
+		for (int i = 0; i < 3; i++) Generate(i); //on startup, give player 10 random units;
 	}
 
-	private void Generate()
+	private void Generate(int i)
 	{
 		//get random unit
-		int r = Calc.RandomRange(0, Templates.Count);
-		UnitTemplate template = Templates[r];
+		//int r = Calc.RandomRange(0, Templates.Count);
+		UnitTemplate template = Templates[i];
 
 		//generate unit data and add it to your overall units list
 		UnitData data = template.GenerateData();
