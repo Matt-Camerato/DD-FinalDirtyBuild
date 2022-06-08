@@ -18,6 +18,8 @@ public class GameMaster : MonoBehaviour {
 	public int MaxUnits = 6;
 
 	void Start() {
+		RoundManager.roundsPlayed++; //increment rounds played
+
 		if (UnitListStaticRef.Starters != null) {
 			int cnt = MaxUnits;
 			foreach (UnitData data in UnitListStaticRef.Starters) {
@@ -67,7 +69,12 @@ public class GameMaster : MonoBehaviour {
 
 		}
 		yield return new WaitForSeconds(EndPauseTime);
-		OnEnd?.Invoke();
+
+		if (Right.Empty() && !Left.Empty()) RoundManager.roundsWon++;
+		else if (!Right.Empty() && Left.Empty()) RoundManager.roundsLost++;
+
+		RoundManager.EndRound();
+		//OnEnd?.Invoke();
 	}
 
 	IEnumerator Turn() {
