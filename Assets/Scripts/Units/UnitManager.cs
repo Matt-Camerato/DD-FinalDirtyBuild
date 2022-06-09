@@ -5,7 +5,7 @@ using Thuleanx.Utils;
 
 public class UnitManager : MonoBehaviour
 {
-    static public List<UnitData> CurrentUnits = new List<UnitData>();
+	static public List<UnitData> CurrentUnits;
 
 	public Transform UnitParent;
 	public List<UnitTemplate> Templates; //possible unit types
@@ -13,7 +13,16 @@ public class UnitManager : MonoBehaviour
 
 	private void Awake()
 	{
-		for (int i = 0; i < 3; i++) Generate(i); //on startup, give player 10 random units;
+		if(CurrentUnits == null)
+        {
+			CurrentUnits = new List<UnitData>();
+			for (int i = 0; i < 3; i++) Generate(i); //on startup, give player 10 random units;
+		}
+        else
+        {
+			SpawnUnits();
+			Debug.Log("yes");
+        }
 	}
 
 	private void Generate(int i)
@@ -36,5 +45,22 @@ public class UnitManager : MonoBehaviour
 		obj.transform.localPosition = new Vector3(Random.Range(-5.5f, 5.5f), Random.Range(1.5f, -1.5f), 0); // <-hard-coded boundaries of igloo floor (in terms of canvas)
 		UnitTempDisplay Display = obj.GetComponent<UnitTempDisplay>();
 		Display.SetData(data);
+	}
+
+	private void SpawnUnits()
+    {
+		foreach(UnitData data in CurrentUnits)
+        {
+			//spawn unit AI object
+			GameObject obj = GameObject.Instantiate(
+				UnitPrefab,
+				Vector3.zero,
+				Quaternion.identity,
+				UnitParent
+			);
+			obj.transform.localPosition = new Vector3(Random.Range(-5.5f, 5.5f), Random.Range(1.5f, -1.5f), 0); // <-hard-coded boundaries of igloo floor (in terms of canvas)
+			UnitTempDisplay Display = obj.GetComponent<UnitTempDisplay>();
+			Display.SetData(data);
+		}
 	}
 }
